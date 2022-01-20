@@ -148,65 +148,65 @@ end
 
 #Add Item (Book or Magazine)
 
-  # puts "chose item to add B for a book, M for a magazine"
-  # kindOfitem = gets.chomp
-  # if kindOfitem == "B"
-  #     book =Book.new()
-  #     puts "Enter book information: Title - Price - Author - Pages - isbn "
-  #     book.title = gets.chomp
-  #     book.price = gets.chomp.to_i
-  #     book.auth = gets.chomp
-  #     book.pages = gets.chomp.to_i
-  #     book.isbn = gets.chomp.to_i
-  #     Book.pushBook(book.title,book.price,book.auth,book.pages,book.isbn)
+  puts "chose item to add B for a book, M for a magazine"
+  kindOfitem = gets.chomp
+  if kindOfitem == "B"
+      book =Book.new()
+      puts "Enter book information: Title - Price - Author - Pages - isbn "
+      book.title = gets.chomp
+      book.price = gets.chomp.to_i
+      book.auth = gets.chomp
+      book.pages = gets.chomp.to_i
+      book.isbn = gets.chomp.to_i
+      Book.pushBook(book.title,book.price,book.auth,book.pages,book.isbn)
 
-  # elsif kindOfitem =="M"
-  #     mag =Magazine.new()
-  #     puts "Enter Magazine information: Title - Price - Publisher - Date "
+  elsif kindOfitem =="M"
+      mag =Magazine.new()
+      puts "Enter Magazine information: Title - Price - Publisher - Date "
 
-  #     mag.title = gets.chomp
-  #     mag.price = gets.chomp.to_i
-  #     mag.publisher =gets.chomp
-  #     mag.date = gets.chomp.to_i
+      mag.title = gets.chomp
+      mag.price = gets.chomp.to_i
+      mag.publisher =gets.chomp
+      mag.date = gets.chomp.to_i
       
-  #     Magazine.pushMagazine(mag.title,mag.price,mag.publisher,mag.date)
+      Magazine.pushMagazine(mag.title,mag.price,mag.publisher,mag.date)
     
-  # end
+  end
 
 
 
 # Objects data
 
-book1 = Book.pushBook("Ruby Cookbookce",67,"Lucas Carlsoages",400,9780596523695)
+# book1 = Book.pushBook("Ruby Cookbookce",67,"Lucas Carlsoages",400,9780596523695)
 
-book2 = Book.pushBook("Ruby programming",90,"Jerry Lee",200,1730497513499)
+# book2 = Book.pushBook("Ruby programming",90,"Jerry Lee",200,1730497513499)
 
-book3 = Book.pushBook("Ruby datatypes",30,"Tom jack",150,5478913465295)
+# book3 = Book.pushBook("Ruby datatypes",30,"Tom jack",150,5478913465295)
 
-book4 = Book.pushBook("Ruby Class",200,"Chan Lee",240,1264398743530)
-
-
-magazine1= Magazine.pushMagazine("Software Magazine",13,"IEEE","01-03-2022")
-
-magazine2= Magazine.pushMagazine("Communications of the ACM",80,"ACM","2021") 
-
-magazine3= Magazine.pushMagazine("eLearn",50,"ACM","2021")
-
-magazine2= Magazine.pushMagazine("COVID-19",100,"IEEE","2022") 
+# book4 = Book.pushBook("Ruby Class",200,"Chan Lee",240,1264398743530)
 
 
+# magazine1= Magazine.pushMagazine("Software Magazine",13,"IEEE","01-03-2022")
+
+# magazine2= Magazine.pushMagazine("Communications of the ACM",80,"ACM","2021") 
+
+# magazine3= Magazine.pushMagazine("eLearn",50,"ACM","2021")
+
+# magazine2= Magazine.pushMagazine("COVID-19",100,"IEEE","2022") 
 
 
-## list expensive items
-# StoreItem.expensive()
 
 
-## books within range
-# puts "Enter the lower price"
-# x = gets.chomp.to_i
-# puts "Enter the higher price"
-# y = gets.chomp.to_i
-# StoreItem.range(x,y)
+# list expensive items
+StoreItem.expensive()
+
+
+# books within range
+puts "Enter the lower price"
+x = gets.chomp.to_i
+puts "Enter the higher price"
+y = gets.chomp.to_i
+StoreItem.range(x,y)
 
 
 ## search Magazine by date
@@ -216,21 +216,21 @@ w = gets.chomp
 Magazine.searchDate(w)
 
 
-## search Magazine by publisher
+# search Magazine by publisher
 
-# puts "Enter the Publisher Name"
-# z = gets.chomp
-# Magazine.searchPublisher(z)
+puts "Enter the Publisher Name"
+z = gets.chomp
+Magazine.searchPublisher(z)
 
 
-## list all items
-#print(StoreItem.printList)
+# list all items
+print(StoreItem.printList)
 
-## delete an item by title
+# delete an item by title
 
-# puts "Enter the title you want to delete"
-# de1 = gets.chomp
+puts "Enter the title you want to delete"
+de1 = gets.chomp
 
-# StoreItem.deleteItem(de1)
+StoreItem.deleteItem(de1)
 
-# print(StoreItem.printList)
+print(StoreItem.printList)
